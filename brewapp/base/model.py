@@ -1,5 +1,48 @@
 from brewapp import db
 
+class Investment(db.Model):
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    name = db.Column(db.String(255))
+
+    def __repr__(self):
+        return self.name
+
+    def __unicode__(self):
+        return self.name
+
+
+class Bank(db.Model):
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    name = db.Column(db.String(255))
+
+    def __repr__(self):
+        return self.name
+
+    def __unicode__(self):
+        return self.name
+
+
+class Cart(db.Model):
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    name = db.Column(db.String(255))
+
+    def __repr__(self):
+        return self.name
+
+    def __unicode__(self):
+        return self.name
+    
+
+class Stock(db.Model):
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    name = db.Column(db.String(255))
+
+    def __repr__(self):
+        return self.name
+
+    def __unicode__(self):
+        return self.name
+
 
 class Step(db.Model):
 
